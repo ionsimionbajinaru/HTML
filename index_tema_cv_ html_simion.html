@@ -3,147 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Ion Simion Bajinaru</title>
+    <title>Ion Simion Bajinaru | Digital Systems Builder</title>
+    <style>
+      :root {
+        --bg: #0b1120;
+        --surface: #121a2d;
+        --surface-2: #0f172a;
+        --line: #24314d;
+        --text: #e6edf7;
+        --muted: #9fb0cf;
+        --accent: #5eead4;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1b2742, var(--bg) 38%);
+        color: var(--text);
+      }
+
+      .cv {
+        max-width: 980px;
+        margin: 0 auto;
+        background: linear-gradient(165deg, var(--surface-2), var(--surface));
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 2rem;
+      }
+
+      .hero {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+      }
+
+      .headline {
+        margin: 0.45rem 0;
+        color: var(--accent);
+        font-size: 1.05rem;
+      }
+
+      .meta,
+      .meta a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .summary {
+        margin-top: 1rem;
+        max-width: 72ch;
+        line-height: 1.55;
+      }
+
+      section {
+        background: rgba(10, 18, 35, 0.72);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        margin-top: 0.95rem;
+      }
+
+      h2 {
+        margin: 0 0 0.7rem;
+        color: var(--accent);
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1rem;
+        line-height: 1.55;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.4rem 1rem;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .chip {
+        border: 1px solid #35507a;
+        border-radius: 999px;
+        padding: 0.25rem 0.65rem;
+        color: #cde0ff;
+        background: rgba(58, 88, 136, 0.2);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          padding: 1rem;
+        }
+
+        .cv {
+          padding: 1rem;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <header>
-        <h1>
-          Ion Simion
-          <span>Bajinaru</span>
-        </h1>
-        <div>
-          <span>Place: 107285 ● <b>Phone</b>: +40736598590</span>
-          <br />
-
-          <span
-            ><strong>EmailID ●</strong>
-            <a href="#">linkedin.com/in/ion-simion-bajinaru-0ba866299//</a></span
+    <main class="cv">
+      <header class="hero">
+        <h1>Ion Simion Bajinaru</h1>
+        <p class="headline">
+          Digital Systems Builder | MVP Execution Partner | Funnel Architect
+        </p>
+        <p class="meta">
+          Ploiești / Bucharest | Remote Global · 0755283527<br />
+          <a href="https://www.linkedin.com/in/bajinaruionsimion/"
+            >linkedin.com/in/bajinaruionsimion/</a
           >
-        </div>
+          + ionsimionbajinaru.com
+        </p>
+        <p class="summary">
+          Product-oriented builder focused on launching production-ready MVPs,
+          funnel-driven websites and structured digital systems. From strategy to
+          deployment. Execution without noise.
+        </p>
       </header>
-      <br />
 
-      <div>
-        <h3>Objective</h3>
+      <section>
+        <h2>Digital Systems &amp; MVP Development</h2>
+        <p><strong>2023 – Present</strong></p>
         <ul>
-          <p>Front end developer</p>
+          <li>Built structured MVPs using WordPress + Elementor.</li>
+          <li>Designed multi-step funnel architectures.</li>
+          <li>Implemented analytics (GA4, GTM, consent-first tracking).</li>
+          <li>SEO-ready architecture &amp; performance optimization.</li>
+          <li>Client system setup (SmartBill, MerchantPro, integrations).</li>
         </ul>
-      </div>
-      <div>
-        <h3>Experience</h3>
-        <ul>
-          <li><b>August 2023</b></li>
-          <span><b>CNC</b> , Ploiesti</span>
-        </ul>
-      </div>
+      </section>
 
-      <div>
-        <h3>Education</h3>
-        <div>
-          <ul>
-            <li><b>2010-2014</b></li>
-            <span
-              ><b>Electrotechnician</b>, Technological High School Teodor
-              Diamant</span
-            ><br />
-            <span>Qualified Certified</span>
-          </ul>
+      <section>
+        <h2>Core Skills</h2>
+        <ul class="skills-grid">
+          <li>HTML / CSS</li>
+          <li>JavaScript (Foundations)</li>
+          <li>WordPress / Elementor</li>
+          <li>Funnel Architecture</li>
+          <li>GA4 / GTM</li>
+          <li>SmartBill / MerchantPro Integrations</li>
+          <li>MVP Structuring</li>
+          <li>Conversion Thinking</li>
+          <li>UX Hierarchy</li>
+          <li>Performance-first builds</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Execution &amp; Delivery</h2>
+        <ul>
+          <li>Structured project execution.</li>
+          <li>Client communication &amp; requirement translation.</li>
+          <li>Workflow standardization.</li>
+          <li>IP-oriented delivery frameworks.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Operating Principles</h2>
+        <div class="chips">
+          <span class="chip">Architecture First Thinking</span>
+          <span class="chip">Execution Over Theory</span>
+          <span class="chip">Scalable System Design</span>
+          <span class="chip">Conversion-Driven Builds</span>
         </div>
-        <div>
-          <ul>
-            <li><b>Year-Batch</b></li>
-            <span><b>Education</b>, PLACE</span
-            ><br />
-            <span><b>POSITIVE POINTS</b> at the end of Your Course</span>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><b>Year-Batch</b></li>
-            <span><b>Education</b>, PLACE</span
-            ><br />
-            <span><b>POSITIVE POINTS</b> at the end of Your Course</span>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h3>Skills</h3>
-
-        <table>
-          <tr>
-            <th>● Programming</th>
-            <th>● Mechatronics</th>
-            <th>● Other</th>
-          </tr>
-
-          <tr>
-            <td>******</td>
-            <td>******</td>
-            <td>Photoshop</td>
-          </tr>
-
-          <tr>
-            <td>******</td>
-            <td>******</td>
-            <td>Camtasia</td>
-          </tr>
-
-          <tr>
-            <td>******</td>
-            <td>******</td>
-            <td>******</td>
-          </tr>
-
-          <tr>
-            <td>******</td>
-            <td>******</td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-      <div>
-        <h3>Leadership and Volunteering Experiences</h3>
-        <ul>
-          <li><b>Position</b></li>
-          <span>About</span
-          ><br /><br />
-          <li><b>Position</b></li>
-          <span>About</span
-          ><br />
-          <br />
-          <li><b>Position</b></li>
-          <span>About</span
-          ><br />
-          <br />
-          <li><b>Position</b></li>
-          <span>About</span
-          ><br />
-          <br />
-          <li><b>Position</b></li>
-          <span>About</span>
-        </ul>
-      </div>
-      <div>
-        <h3>Achievements</h3>
-        <ul>
-          <div>
-            <li>Fundamental notions <b> of digital marketing</b></li>
-          </div>
-          <div>
-            <li>Your Crazy <b>Achievement -2</b></li>
-          </div>
-          <div>
-            <li>Your Crazy <b>Achievement -3</b></li>
-          </div>
-          <div>
-            <li>Your Crazy <b>Achievement -4</b></li>
-          </div>
-          <div>
-            <li>Your Crazy <b>Achievement -5</b></li>
-          </div>
-        </ul>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
